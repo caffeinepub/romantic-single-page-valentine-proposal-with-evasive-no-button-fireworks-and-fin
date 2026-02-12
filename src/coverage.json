@@ -1,0 +1,48 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-12T13:17:40.531Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 2,
+    "items": [
+      {
+        "id": "REQ-10",
+        "summary": "When the user tries to interact with the NO button (click, hover, or keyboard focus), it must move to a new position within the visible viewport/container bounds and change its label text each time (use English phrases), ensuring it never renders off-screen or under fixed UI elements.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/valentine/ProposalScreen.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/valentine/ProposalScreen.tsx"
+        ]
+      },
+      {
+        "id": "REQ-9",
+        "summary": "On the proposal screen, display a clearly labeled \"NO\" button positioned side-by-side with the \"YES!\" button (same row on desktop; may wrap/stack responsively on small screens) before any evasive movement occurs.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/valentine/ProposalScreen.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/valentine/ProposalScreen.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/src/components/valentine/ProposalScreen.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "Romantic single-page Valentine proposal website with playful interactive buttons (including an evasive reject/decline button), celebratory fireworks on acceptance, a final photo/message screen, and a personalized first page header name (“EMAN”) in a lovely font.",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-single-page-valentine-proposal-experience-that-asks-the-user-s-wife-to-be-the-user-s-valentine-with-clearly-separated-phases-1-proposal-prompt-screen-2-acceptance-celebration-fireworks-3-final-screen-with-a-cute-photo-and-the-message-much-love",
+      "title": "Create a single-page Valentine proposal experience that asks the user’s wife to be the user’s Valentine, with clearly separated phases: (1) proposal prompt screen, (2) acceptance celebration (fireworks), (3) final screen with a cute photo and the message “Much love.”",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-on-the-proposal-prompt-screen-implement-two-prominent-buttons-a-playful-yes-button-and-a-decline-button-the-yes-button-must-be-clickable-and-visually-inviting-e-g-animated-pulsing-hover-feedback-without-breaking-accessibility",
+      "title": "On the proposal prompt screen, implement two prominent buttons: a playful “YES” button and a decline button. The “YES” button must be clickable and visually inviting (e.g., animated/pulsing/hover feedback) without breaking accessibility.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-decline-button-behavior-so-it-actively-avoids-being-clicked-each-time-the-user-attempts-to-click-it-it-moves-to-a-new-position-anywhere-within-the-visible-viewport-bounds-and-changes-its-label-text-each-time-a-different-message-per-attempt-ensure-the-button-never-renders-off-screen-or-under-fixed-ui-elements",
+      "title": "Implement the decline button behavior so it actively avoids being clicked: each time the user attempts to click it, it moves to a new position anywhere within the visible viewport bounds and changes its label text each time (a different message per attempt). Ensure the button never renders off-screen or under fixed UI elements.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-when-the-user-clicks-yes-transition-immediately-to-a-celebratory-fireworks-animation-then-automatically-transition-to-the-final-screen-after-the-celebration-completes-with-a-short-pleasant-duration",
+      "title": "When the user clicks “YES”, transition immediately to a celebratory fireworks animation, then automatically transition to the final screen after the celebration completes (with a short, pleasant duration).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-final-screen-display-a-cute-photo-provided-as-a-static-asset-and-the-message-much-love-ensure-the-layout-is-responsive-for-mobile-and-desktop-and-the-image-is-displayed-with-appropriate-scaling-cropping-no-distortion",
+      "title": "Final screen: display a cute photo (provided as a static asset) and the message “Much love.” Ensure the layout is responsive for mobile and desktop, and the image is displayed with appropriate scaling/cropping (no distortion).",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-cohesive-romantic-visual-theme-across-the-entire-single-page-experience-typography-color-palette-background-button-styling-spacing-choose-a-distinct-style-that-fits-a-valentine-proposal-and-keep-it-consistent-across-all-states",
+      "title": "Apply a cohesive romantic visual theme across the entire single-page experience (typography, color palette, background, button styling, spacing). Choose a distinct style that fits a Valentine proposal and keep it consistent across all states.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-required-generated-image-s-to-the-frontend-as-static-assets-under-frontend-public-assets-generated-and-use-them-directly-from-the-frontend-no-backend-image-serving",
+      "title": "Add the required generated image(s) to the frontend as static assets under frontend/public/assets/generated and use them directly from the frontend (no backend image serving).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-on-the-first-proposal-page-display-the-name-eman-at-the-top-of-the-screen-with-a-lovely-romantic-font-style-that-matches-the-existing-theme-without-breaking-the-current-layout-of-the-proposal-prompt-and-buttons",
+      "title": "On the first/proposal page, display the name \"EMAN\" at the top of the screen with a lovely, romantic font style that matches the existing theme, without breaking the current layout of the proposal prompt and buttons.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-on-the-proposal-screen-display-a-clearly-labeled-no-button-positioned-side-by-side-with-the-yes-button-same-row-on-desktop-may-wrap-stack-responsively-on-small-screens-before-any-evasive-movement-occurs",
+      "title": "On the proposal screen, display a clearly labeled \"NO\" button positioned side-by-side with the \"YES!\" button (same row on desktop; may wrap/stack responsively on small screens) before any evasive movement occurs.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-when-the-user-tries-to-interact-with-the-no-button-click-hover-or-keyboard-focus-it-must-move-to-a-new-position-within-the-visible-viewport-container-bounds-and-change-its-label-text-each-time-use-english-phrases-ensuring-it-never-renders-off-screen-or-under-fixed-ui-elements",
+      "title": "When the user tries to interact with the NO button (click, hover, or keyboard focus), it must move to a new position within the visible viewport/container bounds and change its label text each time (use English phrases), ensuring it never renders off-screen or under fixed UI elements.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a romantic single-page Valentine proposal page asking wife to be Valentine.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add playful YES button interaction and a declining button that moves away on click, changes its label/title each time, and moves across the whole screen.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "On acceptance, show celebratory fireworks animation then transition to a final screen with a cute photo and the message “Much love.”",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add the name “EMAN” at the top of the first/proposal page with a lovely font style.",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Romantic single-page Valentine proposal with evasive No button, fireworks, and final photo screen",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

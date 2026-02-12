@@ -1,0 +1,39 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add visible NO button beside YES and preserve evasive moving/label behavior",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "summary": "Show a clearly labeled NO button next to the YES! button on initial render with responsive wrapping/stacking.",
+      "acceptanceCriteria": [
+        "On initial render, the NO button is visible and placed next to the YES button (with responsive behavior for small screens).",
+        "The NO button is visually distinct but consistent with the existing romantic theme and button styling.",
+        "The YES button remains clickable and continues to trigger the acceptance flow unchanged."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/valentine/ProposalScreen.tsx",
+          "operation": "modify",
+          "description": "Update the proposal screen button area to render a visible \"NO\" button side-by-side with the existing \"YES!\" button using responsive layout (row on larger screens; wraps/stacks on small screens). Use the shadcn-ui Button component (and/or composed styling consistent with existing Tailwind romantic theme) to keep visuals consistent; verify the component's usage instructions before implementing. Ensure the YES button remains unchanged in behavior and still triggers onAccept."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Make the NO button evade interaction by moving within safe on-screen bounds and changing its English label on each hover/click/focus attempt.",
+      "acceptanceCriteria": [
+        "Attempting to click, hover, or focus the NO button triggers a reposition to a new on-screen location within safe bounds.",
+        "Each interaction increments an attempt count and updates the button label to a different English message (with the initial label reading \"NO\").",
+        "The NO button never becomes partially/fully off-screen and remains reachable/visible after it moves."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/valentine/ProposalScreen.tsx",
+          "operation": "modify",
+          "description": "Refactor the existing decline/evasive logic so the same \"NO\" button shown next to YES becomes evasive: on click, hover, or keyboard focus it moves to a new position within the visible container/viewport safe bounds and updates its label to a different English phrase each time (initial label exactly \"NO\"). Clamp computed positions to avoid going off-screen and avoid overlapping the top header area (safe padding). Preserve smooth motion transitions, ensure the button stays focusable/visible after moving, and keep behavior contained to the existing proposal screen. Verify any shadcn-ui Button component usage instructions before implementing."
+        }
+      ]
+    }
+  ]
+}

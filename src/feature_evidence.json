@@ -1,0 +1,41 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-on-the-proposal-screen-display-a-clearly-labeled-no-button-positioned-side-by-side-with-the-yes-button-same-row-on-desktop-may-wrap-stack-responsively-on-small-screens-before-any-evasive-movement-occurs",
+      "featureTitle": "On the proposal screen, display a clearly labeled \"NO\" button positioned side-by-side with the \"YES!\" button (same row on desktop; may wrap/stack responsively on small screens) before any evasive movement occurs.",
+      "files": [
+        "frontend/src/components/valentine/ProposalScreen.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-when-the-user-tries-to-interact-with-the-no-button-click-hover-or-keyboard-focus-it-must-move-to-a-new-position-within-the-visible-viewport-container-bounds-and-change-its-label-text-each-time-use-english-phrases-ensuring-it-never-renders-off-screen-or-under-fixed-ui-elements",
+      "featureTitle": "When the user tries to interact with the NO button (click, hover, or keyboard focus), it must move to a new position within the visible viewport/container bounds and change its label text each time (use English phrases), ensuring it never renders off-screen or under fixed UI elements.",
+      "files": [
+        "frontend/src/components/valentine/ProposalScreen.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

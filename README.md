@@ -1,2 +1,3 @@
-# romantic-single-page-valentine-proposal-with-evasive-no-button-fireworks-and-fin
-Exported from Caffeine project: Romantic single-page Valentine proposal with evasive No button, fireworks, and final photo screen
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

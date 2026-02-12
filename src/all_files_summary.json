@@ -1,0 +1,19 @@
+{
+  "backend/main.mo": "Empty Motoko actor placeholder.",
+  "feature_evidence.json": "Feature evidence report mapping proposal-screen features to source files and components.",
+  "frontend-file-summaries.txt": "Prewritten summaries describing each frontend file’s purpose in the Valentine app.",
+  "frontend/index.css": "Tailwind base setup defining OKLCH theme variables, dark mode tokens, and global styles.",
+  "frontend/index.html": "Base HTML page mounting the SPA root and loading the main React entry script.",
+  "frontend/src/App.tsx": "Root React component rendering the ValentineExperience component.",
+  "frontend/src/components/valentine/FinalScreen.tsx": "Displays the final romantic photo screen with message, animated hearts, and footer attribution.",
+  "frontend/src/components/valentine/fireworks/FireworksCanvas.tsx": "Canvas-based fireworks animation with particles, physics, and periodic firework launches.",
+  "frontend/src/components/valentine/FireworksScreen.tsx": "Shows fireworks animation and auto-transitions to the final screen after 5 seconds.",
+  "frontend/src/components/valentine/ProposalScreen.tsx": "Valentine proposal UI with YES button and an evasive NO button that moves and changes labels on interaction.",
+  "frontend/src/components/valentine/ValentineExperience.tsx": "Manages the three-phase flow: proposal, fireworks, and final screen.",
+  "frontend/src/hooks/useActor.ts": "React hook creating and managing a backend actor tied to Internet Identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides a React context and provider for managing Internet Identity authentication, including login, logout, and loading stored identities. Wraps AuthClient creation with custom options and exposes status flags.",
+  "frontend/src/index.css": "Defines Tailwind base layers and extensive OKLCH color variables for a romantic light/dark theme, along with global typography and styling rules.",
+  "frontend/src/main.tsx": "Bootstraps the React app, wrapping it with React Query and the InternetIdentityProvider before rendering App.",
+  "frontend/tailwind.config.js": "Configures Tailwind with custom colors mapped to OKLCH CSS variables, extended theme settings, plugins, and container settings.",
+  "project_state.json": "Stores project metadata, feature definitions, and high-level description for a romantic Valentine proposal web experience."
+}

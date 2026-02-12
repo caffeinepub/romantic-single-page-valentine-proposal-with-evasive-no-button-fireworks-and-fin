@@ -1,0 +1,66 @@
+{
+  "kind": "build_request",
+  "title": "Place a NO button next to YES and keep evasive behavior with changing label",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "text": "On the proposal screen, display a clearly labeled \"NO\" button positioned side-by-side with the \"YES!\" button (same row on desktop; may wrap/stack responsively on small screens) before any evasive movement occurs.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Add a NO button side to YES button"
+        ]
+      },
+      "acceptanceCriteria": [
+        "On initial render, the NO button is visible and placed next to the YES button (with responsive behavior for small screens).",
+        "The NO button is visually distinct but consistent with the existing romantic theme and button styling.",
+        "The YES button remains clickable and continues to trigger the acceptance flow unchanged."
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "When the user tries to interact with the NO button (click, hover, or keyboard focus), it must move to a new position within the visible viewport/container bounds and change its label text each time (use English phrases), ensuring it never renders off-screen or under fixed UI elements.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "and if no button is clicked it changes its position and title aslo"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Attempting to click, hover, or focus the NO button triggers a reposition to a new on-screen location within safe bounds.",
+        "Each interaction increments an attempt count and updates the button label to a different English message (with the initial label reading \"NO\").",
+        "The NO button never becomes partially/fully off-screen and remains reachable/visible after it moves."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit files under frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, or any files under frontend/src/components/ui (compose them instead).",
+    "Backend remains single-actor; no backend changes are required for this UI-only update."
+  ],
+  "nonGoals": [
+    "Do not change the fireworks timing/transition behavior after clicking YES.",
+    "Do not add new authentication, persistence, or backend endpoints.",
+    "Do not add additional screens or flows beyond adjusting the existing proposal screen button layout/behavior."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

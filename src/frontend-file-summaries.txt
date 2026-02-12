@@ -1,0 +1,10 @@
+{
+  "frontend/src/App.tsx": "Root application component that renders the ValentineExperience single-page component.",
+  "frontend/src/components/valentine/ValentineExperience.tsx": "Main orchestrator component managing three phases (proposal, fireworks, final) with state transitions between them.",
+  "frontend/src/components/valentine/ProposalScreen.tsx": "Proposal screen with \"EMAN\" header, prominent YES button, and a NO button that initially appears side-by-side with YES (responsive layout) then becomes evasive on interaction, moving to random positions and changing labels on each hover/click/focus attempt.",
+  "frontend/src/components/valentine/FireworksScreen.tsx": "Fireworks celebration screen that displays canvas-based fireworks animation and auto-transitions to the final screen after 5 seconds.",
+  "frontend/src/components/valentine/fireworks/FireworksCanvas.tsx": "Canvas-based fireworks animation using particles and physics simulation with romantic pink/red color palette.",
+  "frontend/src/components/valentine/FinalScreen.tsx": "Final screen displaying the romantic photo with \"Much love.\" message and footer attribution.",
+  "frontend/src/index.css": "Global styles with romantic OKLCH color system, custom animations (float, pulse, bounce, fade), display font definitions, and special \"EMAN\" header styling with cursive font and romantic effects.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with romantic color tokens, display font family (Georgia serif), and custom theme utilities."
+}
